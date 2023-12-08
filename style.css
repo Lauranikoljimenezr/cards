@@ -11,7 +11,7 @@ body{
 }
 #logo {
     width:11%;
-    margin: 4% 19% 2% 4%;
+    margin: 4% 40% 2% 4%;
 
 }
 i{
@@ -91,7 +91,7 @@ header .shopping span{
     
     position: fixed;
     top: 0;
-    left: 100%; 
+    left: 190%; 
     width: 500px;
     height: 100vh;
     background-color: #dadada;
@@ -104,6 +104,7 @@ header .shopping span{
 }
 
 .active .cardh{
+  
     left: calc(163% - 440px);
 
 }
@@ -156,10 +157,10 @@ header .shopping span{
 
 
 
-/* Estilos para la lista de productos seleccionados */
+
 #listCard {
-    list-style-type: none; /* Quitar los puntos de la lista */
-    padding: 0; /* Eliminar el relleno predeterminado de la lista */
+    list-style-type: none; 
+    padding: 0; 
     display: block;
   }
   
@@ -865,8 +866,8 @@ button {
 
 
 .size-img {
-    width: 87%;
-
+    width: 200px;
+height: 200px;
     border-radius: 5%;
 }
 
@@ -1019,14 +1020,43 @@ button {
 /* Estilos para pantallas pequeñas (hasta 352px) */
 @media only screen and (max-width: 352px) {
     #logo {
-        width: 30%;
-        margin: 4% 5%;
+        width: 19%;
+        margin: 8% 6%;
     }
-
+    .fa-bag-shopping{
+        width: 10%;
+    }
+    
+#btnCreate{
+    position: relative;
+    right: 3%;
+}
     .buscar {
         right: 10px;
+        width: 60%;
     }
-
+    .size-img {
+        width: 118%;
+        height: 157px;
+        border-radius: 5%;
+    }
+    .nav-list {
+        display: flex;
+        list-style: none;
+        gap: 3rem;
+        margin: 12% 21% 9% 9%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+#category-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-61%, -91%);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
     .navbar li {
         margin: 1% 5% 3% 0%;
     }
@@ -1040,9 +1070,17 @@ button {
     }
 
     .imgalt {
-        height: 50vh;
+     position: relative;
+     top: 9%;
+        width: none;
+        height: none;
+  
     }
 
+
+    .listCard {
+        margin: 0% 0% 19% 12%;
+    }
     .container {
         justify-content: center;
     }

@@ -24,15 +24,7 @@
               <span class="input-highlight"></span>
             </div>
           </div>
-          <div class="navbar">
-            <ul>
-              <li><a href="index.html" class="nav-link">Principal</a></li>
-              <li><a href="" class="nav-link">Categorias</a></li>
-              <li><a href="" class="nav-link">Productos</a></li>
-              <li><a href="" class="nav-link">Contactanos</a></li>
-            </ul>
-    
-          </div>
+          
           <div class="container-card">
             <main>
                <div class="shopping">
@@ -45,6 +37,7 @@
                 <ul id="listCard">
                   <!-- Aquí se agregarán dinámicamente los productos en el carrito -->
                 </ul>
+                
                 <div class="total" id="checkOut ">Total: $0 COP</div>
            
                 <button class="closeShopping">Cerrar Carrito</button>
@@ -95,8 +88,7 @@
         <li>
           <a href="#" class="menu__link">
             <div class="category-container">
-              <img class="size-img" src="image/category ojos.webp" alt="Imagen Producto de ojos" width="200"
-                height="200">
+              <img class="size-img" src="image/category ojos.webp" alt="Imagen Producto de ojos" >
               <span><button id="category-name" class="genre-button"
                   onclick="filterByCategory('Producto de ojos')">Producto de ojos</button></span>
             </div>
@@ -106,8 +98,8 @@
         <li>
           <a href="#" class="menu__link">
             <div class="category-container">
-              <img class="size-img" src="image/category rostro.webp" alt="Imagen Base y correctores" width="200"
-                height="200">
+              <img class="size-img" src="image/category rostro.webp" alt="Imagen Base y correctores" 
+                >
               <span><button id="category-name" class="genre-button"
                   onclick="filterByCategory('Base y correctores')">Base y correctores</button></span>
             </div>
@@ -117,8 +109,8 @@
         <li>
           <a href="#" class="menu__link">
             <div class="category-container">
-              <img class="size-img" src="image/category paletas.webp" alt="Imagen Brochas y herramientas" width="200"
-                height="200">
+              <img class="size-img" src="image/category paletas.webp" alt="Imagen Brochas y herramientas" 
+                >
               <span> <button id="category-name" class="genre-button"
                   onclick="filterByCategory('Brochas y herramientas')">Brochas y herramientas</button></span>
             </div>
@@ -129,7 +121,7 @@
           <a href="#" class="menu__link">
             <div class="category-container">
               <img class="size-img" src="image/Launch_3DHydraLipgloss-LimitedEdition_Landing_Tris-02.webp"
-                alt="Imagen Labios" width="200" height="200">
+                alt="Imagen Labios" >
               <span> <button id="category-name" class="genre-button" onclick="filterByCategory('Labios')">Producto
                   Labios</button></span>
             </div>
@@ -142,10 +134,11 @@
   <div class="dropdown">
     <button class="btnn">Filtrar Precio</button>
     <div class="dropdown-content">
-      <button onclick="sortProducts('desc')" class="dropdown-item" type="button"> Mayor a Menor </button>
-      <button onclick="sortProducts('asc')" class="dropdown-item" type="button"> Menor a Mayor </button>
+        <button onclick="sortProducts('desc')" class="dropdown-item" type="button" data-order="desc"> Mayor a Menor </button>
+        <button onclick="sortProducts('asc')" class="dropdown-item" type="button" data-order="asc"> Menor a Mayor </button>
     </div>
-  </div>
+</div>
+
  <div class="products-container" class="container"></div>
   
     <div class="listCard">
